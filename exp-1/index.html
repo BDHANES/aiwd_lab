@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event Registration</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 700px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #ffffff;
+            border: 2px solid #333;
+        }
+
+        /* ✅ CENTER IMAGE & AUDIO */
+        .center {
+            display: block;
+            margin: 15px auto;
+            max-width: 50%;
+        }
+
+        video {
+            max-width: 80%;
+            display: block;
+            margin: 15px auto;
+        }
+        img {
+            display: block;
+            margin:auto
+             
+
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input, select, textarea, button {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+        button {
+            background-color: green;
+            color: white;
+            border: none;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <h2>Event Registration Form</h2>
+
+    <!-- TC02: Image with alternate text -->
+    <img src="C:\Users\chowd\Downloads\event-banner.jpg.png"
+         alt="Event Banner" class="center">
+
+    <!-- TC03: Video with controls -->
+    <video controls>
+        <source src="c:\Users\chowd\Downloads\promo-video.mp4.mp4"
+                type="video/mp4">
+        Your browser does not support video.
+    </video>
+
+    <!-- TC04: Audio with controls -->
+    <audio controls class="center">
+        <source src="intro.mp3" type="audio/mpeg">
+        Your browser does not support audio.
+    </audio>
+
+    <!-- TC05–TC09: Form -->
+    <form>
+
+        <label>Name:</label>
+        <input type="text" name="name" required>
+
+        <label>Email:</label>
+        <input type="email" name="email" required>
+
+        <label>Date:</label>
+        <input type="date" name="date" required>
+
+        <label>Gender:</label>
+        <input type="radio" name="gender" required> Male
+        <input type="radio" name="gender"> Female
+
+        <label>Department:</label>
+        <select required>
+            <option value="">Select</option>
+            <option>CSE</option>
+            <option>ECE</option>
+            <option>EEE</option>
+        </select>
+
+        <label>Feedback:</label>
+        <textarea rows="4"></textarea>
+
+        <label>Upload File:</label>
+        <input type="file" accept=".jpg,.png,.pdf">
+
+        <button type="submit">Submit</button>
+
+    </form>
+</div>
+
+</body>
+</html>
